@@ -1,19 +1,19 @@
 <div id="top"></div>
 
-<div align="center">d
+<div align="center">
 
   <img src="https://www.frontendmentor.io/static/images/logo-mobile.svg" alt="frontendmentor" width="80">
 
   <h2 align="center">Article preview component solution</h2>
   <p align="center">
-    <a href="https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT"><strong>Frontend Mentor Challenge</strong></a>
+    <a href="https://www.frontendmentor.io/solutions/article-preview-component-tailwind-css-javascript-Z0Z01zbyl6"><strong>Frontend Mentor Challenge</strong></a>
     <br />
     <br />
-    <a href="">View Demo</a>
+    <a href="https://article-preview-component-hdez.vercel.app/">View Demo</a>
     ·
-    <a href="" target="_blank">Report Bug</a>
+    <a href="https://github.com/MelvinAguilar/article-preview-component/issues" target="_blank">Report Bug</a>
     ·
-    <a href="" target="_blank">Request Feature</a>
+    <a href="https://github.com/MelvinAguilar/article-preview-component/issues" target="_blank">Request Feature</a>
   </p>
 </div>
 
@@ -25,7 +25,7 @@
   </a>
   <!-- Status -->
     <a href="#">
-    <img src="https://img.shields.io/badge/Status-Pending-E55937?style=for-the-badge" alt="Status">
+    <img src="https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge" alt="Status Completed">
   </a>
 
 </div>
@@ -42,8 +42,8 @@ This is a solution to the [Article preview component challenge on Frontend Mento
 
 <h2 align="center">Links</h2>
 
-<!-- - Solution URL: [Intro section with dropdown navigation (React + Tailwind + Dark mode) (React + SASS) | Frontend Mentor](https://www.frontendmentor.io/solutions/intro-section-with-dropdown-navigation-tmQXOQU78e)
-- Live Site URL: [https://intro-section-with-dropdown-navigation-hdez.vercel.app/](https://intro-section-with-dropdown-navigation-hdez.vercel.app/)  -->
+- Solution URL: [Article preview component (Tailwind CSS + JavaScript) | Frontend Mentor](https://www.frontendmentor.io/solutions/article-preview-component-tailwind-css-javascript-Z0Z01zbyl6)
+- Live Site URL: [https://article-preview-component-hdez.vercel.app/](https://article-preview-component-hdez.vercel.app/)
 
 <br>
 
