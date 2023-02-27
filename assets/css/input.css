@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        font-family: "Manrope", sans-serif;
+    }
+
+    body {
+        font-size: 0.8125rem;
+        line-height: 154%;
+    }
+
+    :is(a, button, input, textarea, select, details, summary):focus-visible {
+        outline: theme('colors.desaturated-dark-blue') solid 0.188rem;
+        outline-offset: 0.188rem;
+    }
+}
+
+
+@layer components {
+    button[aria-expanded="true"]+#share {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    button[aria-expanded="true"]+#attribution {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .shadow-default {
+        box-shadow: 0rem 2.5rem 2.5rem -0.625rem rgba(201, 213, 225, 0.503415);
+    }
+
+    .shadow-tooltip {
+        box-shadow: 0rem 0.625rem 0.625rem rgba(201, 213, 225, 0.503415);
+    }
+
+    .filter-gray {
+        filter: invert(27%) sepia(7%) saturate(1380%) hue-rotate(190deg) brightness(91%) contrast(87%);
+    }
+
+    .image {
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+
+    .tooltip {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 1.5rem 2rem;
+    }
+
+    .tooltip-footer {
+        position: absolute;
+        right: 2.75rem;
+        bottom: 2.5rem;
+    }
+
+    .tooltip-footer::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 1.25rem 0rem 0.6875rem 0.9375rem;
+        border-color: theme('colors.very-dark-grayish-blue') transparent transparent transparent;
+        top: 81%;
+        right: -2%;
+        transform: rotate(326deg);
+    }
+
+    .transition-visibility {
+        --transition: 200ms ease-in-out;
+        transition: transform var(--transition), visibility var(--transition), opacity var(--transition), background-color var(--transition);
+    }
+
+    @media(hover:hover) {
+        .toggle-tip:hover img {
+            filter: brightness(0) saturate(100%) invert(97%) sepia(0%) saturate(2385%) hue-rotate(70deg) brightness(116%) contrast(81%);
+        }
+    }
+
+    @screen sm {
+        .tooltip-footer {
+            width: max-content;
+        }
+    }
+
+    @screen md {
+        .tooltip {
+            width: fit-content;
+            position: absolute;
+            right: -10%;
+            left: auto;
+            bottom: 125%;
+        }
+
+        .tooltip::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0.625rem;
+            border-color: theme('colors.very-dark-grayish-blue') transparent transparent transparent;
+            top: 100%;
+            left: 75%;
+        }
+
+        .image {
+            border-radius: 0.5rem 0 0 0.5rem;
+        }
+    }
+
+
+    @media screen and (min-width: 54.0625rem) {
+        .tooltip-footer {
+            width: max-content;
+        }
+
+        .tooltip {
+            right: -26%;
+        }
+
+        .tooltip::after {
+            left: 50%;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "article-preview-component-master-new",
+  "version": "1.0.0",
+  "description": "This is a solution to the Article preview component challenge on Frontend Mentor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tailwindcss -i ./assets/css/input.css -o ./output.css --watch",
+    "minify": "uglifyjs ./assets/js/main.js -c -m -o ./assets/js/main.min.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.2.7"
+  },
+  "dependencies": {
+    "uglify-js": "^3.17.4"
+  }
+}

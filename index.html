@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Melvin Aguilar" />
+    <meta
+      name="description"
+      content="Single Price Grid Component Solution for FrontendMentor.io"
+    />
+    <meta
+      name="keywords"
+      content="Frontend Mentor, Single Price Grid Component Challenge, Melvin Aguilar"
+    />
+    <meta
+      property="og:title"
+      content="Single Price Grid Component - Frontend Mentor"
+    />
+    <meta
+      property="og:description"
+      content="Single Price Grid Component Solution for FrontendMentor.io"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Single Price Grid Component</title>
+    <script src="./assets/js/main.min.js" defer></script>
+  </head>
+  <body class="bg-light-grayish-blue grid min-h-screen place-content-center">
+    <!-- Start of the main container -->
+    <main>
+      <h1 class="sr-only">Article preview component</h1>
+      <div
+        class="shadow-default relative m-3 grid max-w-[25rem] rounded-lg bg-white md:max-w-[45.625rem] md:grid-cols-[auto,1fr]"
+      >
+        <img
+          src="./assets/images/drawers.jpg"
+          alt=""
+          width="285"
+          height="280"
+          class="image | h-full w-full object-cover md:w-[17.8125rem] md:object-left"
+        />
+        <div class="px-8 py-4 md:px-10 md:py-8">
+          <h2
+            class="text-very-dark-grayish-blue text-xl font-bold tracking-[0.0156rem]"
+          >
+            Shift the overall look and feel by adding these wonderful touches to
+            furniture in your home
+          </h2>
+          <p class="tracking-loose text-desaturated-dark-blue mt-3">
+            Ever been in a room and felt like something was missing? Perhaps it
+            felt slightly bare and uninviting. I’ve got some simple tips to help
+            you make any room feel complete.
+          </p>
+          <div
+            class="mt-5 flex items-end justify-between md:relative md:items-center"
+          >
+            <figure class="flex items-center gap-4">
+              <img
+                src="assets/images/avatar-michelle.jpg"
+                alt="Michelle Appleton"
+                width="40"
+                height="40"
+                class="rounded-full"
+              />
+              <figcaption class="tracking-loose">
+                <p class="text-very-dark-grayish-blue font-bold">
+                  Michelle Appleton
+                </p>
+                <time datetime="2020-06-28" class="text-grayish-blue">
+                  28 Jun 2020
+                </time>
+              </figcaption>
+            </figure>
+            <button
+              type="button"
+              class="js-toggle-tip | toggle-tip bg-light-grayish-blue hover:bg-desaturated-dark-blue z-10 grid h-8 w-8 place-content-center rounded-full transition-all"
+              aria-haspopup="true"
+              aria-expanded="false"
+              aria-controls="share"
+            >
+              <img
+                src="./assets/images/icon-share.svg"
+                alt="Share"
+                width="15"
+                height="13"
+              />
+            </button>
+            <div
+              id="share"
+              role="tooltip"
+              class="js-tooltip tooltip transition-visibility | shadow-tooltip bg-very-dark-grayish-blue invisible flex items-center gap-4 rounded-b-lg py-[1.4rem] px-9 text-white opacity-0 md:rounded-lg md:py-4"
+            >
+              <h2 class="text-grayish-blue uppercase tracking-[0.3125rem]">
+                Share
+              </h2>
+              <ul class="flex items-center gap-4">
+                <li>
+                  <a href="#" class="block">
+                    <img
+                      src="./assets/images/icon-facebook.svg"
+                      alt="Facebook"
+                      width="20"
+                      height="20"
+                      class="hover:filter-gray transition-all"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="block">
+                    <img
+                      src="./assets/images/icon-twitter.svg"
+                      alt="Twitter"
+                      width="20"
+                      height="20"
+                      class="hover:filter-gray transition-all"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="block">
+                    <img
+                      src="./assets/images/icon-pinterest.svg"
+                      alt="Pinterest"
+                      width="20"
+                      height="20"
+                      class="hover:filter-gray transition-all"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- End of the main container -->
+    <!-- Start of the footer -->
+    <footer
+      class="invisible relative right-2 bottom-2 z-30 my-3 mr-3 sm:fixed sm:m-0"
+    >
+      <button
+        type="button"
+        aria-label="Attribution"
+        aria-haspopup="true"
+        aria-expanded="false"
+        aria-controls="attribution"
+        class="js-toggle-tip | ml-auto block rounded-full opacity-70 transition-all hover:opacity-100"
+      >
+        <img
+          src="https://avatars.githubusercontent.com/u/90595158?v=4"
+          alt=""
+          width="50"
+          height="50"
+          class="border-very-dark-grayish-blue rounded-full border-4"
+        />
+      </button>
+      <div
+        id="attribution"
+        role="tooltip"
+        class="js-tooltip tooltip-footer transition-visibility | shadow-tooltip bg-very-dark-grayish-blue invisible mx-4 flex items-center gap-4 rounded-lg py-4 px-9 text-white opacity-0"
+      >
+        <p class="text-center text-[0.875rem]">
+          Challenge by
+          <a
+            href="https://www.frontendmentor.io?ref=challenge"
+            target="_blank"
+            rel="noreferrer noopener"
+            title="Open in new tab"
+            class="hover:text-grayish-blue font-bold transition-all"
+          >
+            Frontend Mentor </a
+          >. Coded by
+          <a
+            href="https://github.com/MelvinAguilar"
+            target="_blank"
+            rel="noreferrer noopener"
+            title="Open in new tab"
+            class="hover:text-grayish-blue font-bold transition-all"
+          >
+            Melvin Aguilar </a
+          >.
+        </p>
+      </div>
+    </footer>
+    <!-- End of the footer -->
+  </body>
+</html>
