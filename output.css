@@ -583,7 +583,7 @@ button[aria-expanded="true"]+#attribution {
   border-radius: 0.5rem 0.5rem 0 0;
 }
 
-.tooltip {
+.dialog {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -591,13 +591,13 @@ button[aria-expanded="true"]+#attribution {
   padding: 1.5rem 2rem;
 }
 
-.tooltip-footer {
+.dialog-footer {
   position: absolute;
   right: 2.75rem;
   bottom: 2.5rem;
 }
 
-.tooltip-footer::after {
+.dialog-footer::after {
   content: "";
   position: absolute;
   width: 0;
@@ -622,14 +622,14 @@ button[aria-expanded="true"]+#attribution {
 }
 
 @media (min-width: 640px) {
-  .tooltip-footer {
+  .dialog-footer {
     width: -moz-max-content;
     width: max-content;
   }
 }
 
 @media (min-width: 768px) {
-  .tooltip {
+  .dialog {
     width: -moz-fit-content;
     width: fit-content;
     position: absolute;
@@ -638,7 +638,7 @@ button[aria-expanded="true"]+#attribution {
     bottom: 125%;
   }
 
-  .tooltip::after {
+  .dialog::after {
     content: "";
     position: absolute;
     width: 0;
@@ -656,16 +656,16 @@ button[aria-expanded="true"]+#attribution {
 }
 
 @media screen and (min-width: 54.0625rem) {
-  .tooltip-footer {
+  .dialog-footer {
     width: -moz-max-content;
     width: max-content;
   }
 
-  .tooltip {
+  .dialog {
     right: -26%;
   }
 
-  .tooltip::after {
+  .dialog::after {
     left: 50%;
   }
 }
@@ -766,10 +766,6 @@ button[aria-expanded="true"]+#attribution {
 
 .w-full {
   width: 100%;
-}
-
-.max-w-\[400px\] {
-  max-width: 400px;
 }
 
 .max-w-\[25rem\] {
@@ -879,24 +875,16 @@ button[aria-expanded="true"]+#attribution {
   text-transform: uppercase;
 }
 
-.tracking-\[0\.25px\] {
-  letter-spacing: 0.25px;
-}
-
-.tracking-\[5px\] {
-  letter-spacing: 5px;
-}
-
-.tracking-loose {
-  letter-spacing: 0.121875px;
-}
-
 .tracking-\[0\.0156rem\] {
   letter-spacing: 0.0156rem;
 }
 
 .tracking-\[0\.3125rem\] {
   letter-spacing: 0.3125rem;
+}
+
+.tracking-loose {
+  letter-spacing: 0.121875px;
 }
 
 .text-desaturated-dark-blue {
@@ -937,7 +925,17 @@ button[aria-expanded="true"]+#attribution {
   .hover\:filter-gray:hover {
     filter: invert(27%) sepia(7%) saturate(1380%) hue-rotate(190deg) brightness(91%) contrast(87%);
   }
+}
 
+.marker\:relative *::marker {
+  position: relative;
+}
+
+.marker\:relative::marker {
+  position: relative;
+}
+
+@media (hover: hover) and (pointer: fine) {
   .hover\:bg-desaturated-dark-blue:hover {
     --tw-bg-opacity: 1;
     background-color: hsl(214 17% 51% / var(--tw-bg-opacity));
@@ -968,16 +966,8 @@ button[aria-expanded="true"]+#attribution {
     position: relative;
   }
 
-  .md\:w-\[285px\] {
-    width: 285px;
-  }
-
   .md\:w-\[17\.8125rem\] {
     width: 17.8125rem;
-  }
-
-  .md\:max-w-\[730px\] {
-    max-width: 730px;
   }
 
   .md\:max-w-\[45\.625rem\] {
